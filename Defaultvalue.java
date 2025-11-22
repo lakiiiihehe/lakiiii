@@ -19,7 +19,7 @@ public class Defaultvalue
 
     public static void main(String[] args){
         Defaultvalue a1= new Defaultvalue();
-        System.out.println(a1.a);                 //int a;
+        System.out.println(a1.a);                 
         //int a;
         // this will not work as it is a local variable int a=0 or 5; would work
         System.out.println(a1.b);

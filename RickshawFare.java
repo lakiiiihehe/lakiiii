@@ -23,12 +23,12 @@ public class RickshawFare
     int nig_fare = (nig>18)?(fare+30):(fare+0);
     
     scan.nextLine();
-    System.out.println("Is the customer a local? (yes or no) ");
-    String l = scan.nextLine();
+    System.out.println("Is the customer a local? (press 1 for local) ");
+    int l = scan.nextInt();
     
     System.out.println("\n");
-    int final_fare = (l == "yes")?(nig_fare-44):(nig_fare-0);
-    System.out.println("YOUR FINAL FARE IS : "+final_fare);
+    int final_fare = (l == 1 && distance > 20)?(nig_fare-10):(nig_fare-0);
+    System.out.println("YOUR FINAL FARE IS : RS "+final_fare);
     
     
     
